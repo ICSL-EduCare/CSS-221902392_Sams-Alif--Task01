@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS @property</title>
+    <style>
+        @property --my-color { syntax: '<color>'; inherits: false; initial-value: red; }
+        .box { background-color: var(--my-color); width: 100px; height: 100px; transition: --my-color 2s; }
+        .box:hover { --my-color: blue; }
+    </style>
+</head>
+<body>
+    <h2>CSS @property Example</h2>
+    <p>Hover over the box to see the color transition:</p>
+    <div class="box"></div>
+</body>
+</html>
