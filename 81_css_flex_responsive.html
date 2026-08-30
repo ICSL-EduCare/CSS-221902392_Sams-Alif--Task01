@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Flex Responsive</title>
+    <style>
+        .flex-container { display: flex; flex-direction: row; background-color: teal; }
+        .flex-item { background-color: white; padding: 20px; margin: 10px; flex: 50%; text-align: center; }
+        
+        @media (max-width: 600px) {
+            .flex-container { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <h2>Responsive Flexbox</h2>
+    <p>Resize the browser to less than 600px to see the layout stack vertically.</p>
+    <div class="flex-container">
+        <div class="flex-item">Left</div>
+        <div class="flex-item">Right</div>
+    </div>
+</body>
+</html>
