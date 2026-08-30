@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Combinators</title>
+    <style>
+        div p { background-color: yellow; } /* Descendant selector */
+        div > p { color: red; } /* Child selector */
+    </style>
+</head>
+<body>
+    <div>
+        <p>Paragraph inside div.</p>
+        <section><p>Paragraph inside section inside div.</p></section>
+    </div>
+</body>
+</html>
