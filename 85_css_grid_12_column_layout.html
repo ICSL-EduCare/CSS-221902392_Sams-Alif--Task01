@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid 12-column Layout</title>
+    <style>
+        .grid-container { display: grid; grid-template-columns: repeat(12, 1fr); gap: 5px; }
+        .grid-item { background-color: #ddd; padding: 20px; text-align: center; border: 1px solid #aaa; }
+        .span-4 { grid-column: span 4; }
+        .span-8 { grid-column: span 8; }
+    </style>
+</head>
+<body>
+    <h2>12-Column Grid Layout</h2>
+    <div class="grid-container">
+        <div class="grid-item span-4">4 Columns</div>
+        <div class="grid-item span-8">8 Columns</div>
+    </div>
+</body>
+</html>
