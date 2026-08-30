@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Specificity</title>
+    <style>
+        #myElement { color: red; } /* ID has higher specificity */
+        .myClass { color: green; }
+        p { color: blue; }
+    </style>
+</head>
+<body>
+    <p id="myElement" class="myClass">This text is red because ID selectors have the highest specificity.</p>
+</body>
+</html>
