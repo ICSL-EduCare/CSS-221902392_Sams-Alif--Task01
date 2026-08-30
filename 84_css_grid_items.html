@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Grid Items</title>
+    <style>
+        .grid-container { display: grid; grid-template-columns: auto auto auto; gap: 10px; background-color: purple; padding: 10px; }
+        .grid-item { background-color: white; padding: 20px; text-align: center; border: 1px solid black; }
+        .item1 { grid-column: 1 / 3; } /* Spans across 2 columns */
+    </style>
+</head>
+<body>
+    <h2>Grid Items Properties</h2>
+    <div class="grid-container">
+        <div class="grid-item item1">Item 1 (Spans 2 columns)</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+    </div>
+</body>
+</html>
